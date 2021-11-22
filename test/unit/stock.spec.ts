@@ -16,7 +16,7 @@ describe("Feature: Stock", () => {
 
   describe("given a stock", () => {
     describe("when they try to calculate its price on 2021-10-11", () => {
-      it("should return an Err 'Price Not Found error'", () => {
+      it("should return an Err 'Price Not Found'", () => {
         const stock = new Stock(["2021-10-10", 10], [["2021-10-10", 10]]);
         const price = stock.Price("2021-10-11");
 
