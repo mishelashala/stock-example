@@ -5,23 +5,17 @@ describe("Feature: Portfolio", () => {
   describe("given a portfolio with a list of stock", () => {
     describe("when they try to calculate the profit", () => {
       it("should return the anualized profits", () => {
-        const stockOne = new Stock(
+        const stockOne = new Stock([
           ["2021-10-10", 10],
-          [
-            ["2021-10-10", 10],
-            ["2021-10-11", 9],
-            ["2021-10-12", 11],
-          ]
-        );
+          ["2021-10-11", 9],
+          ["2021-10-12", 11],
+        ]);
 
-        const stockTwo = new Stock(
+        const stockTwo = new Stock([
           ["2021-10-10", 10],
-          [
-            ["2021-10-10", 10],
-            ["2021-10-11", 9],
-            ["2021-10-12", 8],
-          ]
-        );
+          ["2021-10-11", 9],
+          ["2021-10-12", 8],
+        ]);
 
         const portfolio = new Portfolio([stockOne, stockTwo]);
 

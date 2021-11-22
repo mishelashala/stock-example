@@ -10,11 +10,9 @@ const tupleToDictionary = (obj, tuple) => {
 export type DatePriceTuple = [string, number];
 
 export class Stock {
-  purchasingPrice: DatePriceTuple;
   prices: {};
 
-  constructor(purchasingPrice, prices) {
-    this.purchasingPrice = purchasingPrice;
+  constructor(prices) {
     this.prices = reduce(tupleToDictionary, {}, prices);
   }
 
