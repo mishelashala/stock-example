@@ -4,7 +4,7 @@ import { Stock } from "../../src/stock";
 describe("Feature: Portfolio", () => {
   describe("given a portfolio with a list of stock", () => {
     describe("when they try to calculate the profit", () => {
-      it("should return the profits", () => {
+      it("should return the anualized profits", () => {
         const stockOne = new Stock(
           ["2021-10-10", 10],
           [
